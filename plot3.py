@@ -12,7 +12,7 @@ out=np.log(1+(df.area))
 df.plot()  # plots all columns against index
 plt.show()
 
-for col in {"X","Y","month","day","FFMC","DMC","DC","ISI","temp","RH","wind","rain"}:
+for col in df:
 	plt.scatter(df[col],out)
 	plt.xlabel("col")
 	plt.ylabel("area")
